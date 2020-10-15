@@ -1,0 +1,42 @@
+body {
+    background-color: cadetblue;
+}
+
+h1 {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+canvas {
+    position: absolute;
+}
+
+#bigcanvas {
+    border: 2px solid teal;
+    background-color: lightgreen;
+    overflow: auto;
+}
+
+#container {
+    position: relative;
+}
+
+#goingUp {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    display: none;
+    left: 400px;
+}
+
+#goingDown {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    display: none;
+    left: 3t00px;
+    top: 600px;
+}

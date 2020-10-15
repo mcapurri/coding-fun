@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Spotify Search</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Spotify search</h1>
+        </header>
+        <section>
+            <form class="search-bar">
+                <input type="text" name="search" placeholder="search here" />
+                <select class="artist-or-album">
+                    <option>artist</option>
+                    <option>album</option>
+                </select>
+                <button class="submit-button" type="button">Let's go</button>
+            </form>
+        </section>
+
+        <section>
+            <div class="results-container"></div>
+        </section>
+
+        <!-- <footer>&copy; 2020 M.Capurri</footer> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

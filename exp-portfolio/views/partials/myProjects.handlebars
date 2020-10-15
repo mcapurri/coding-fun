@@ -1,0 +1,18 @@
+        <div class="container">
+    {{#projects}}
+            {{#if ../image}} 
+                <div class="box">
+                    <div class="img-box">
+                        <a href="/projects/{{nameProject}}"><img src="/{{nameDirectory}}/screenshot.jpg"></a>
+                    </div>
+                    <div class="name">
+                        <a href="/projects/{{nameProject}}"/>{{nameProject}}</a>
+                    </div>
+                </div>
+            {{else}}
+                    <div class="name">
+                        <a href="/projects/{{nameProject}}"/>{{nameProject}}</a>
+                    </div>
+            {{/if}}
+    {{/projects}}
+        </div>

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100hv;
+    display: flex;
+}
+
+input {
+    border: 2px solid blue;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input:focus {
+    box-shadow: 0 0 10px hotpink; /* offset-x | offset-y | blur-radius | color */
+    outline: none;
+}
+
+.container {
+    background: #f3f3f3;
+    padding: 30px;
+    height: 300px;
+    width: 600px;
+    top: 100px;
+    left: 300px;
+    border: 2px solid black;
+    position: relative;
+}
+.results-container {
+    width: 70%;
+    font-size: 18px;
+    margin: 10 auto 0;
+}
