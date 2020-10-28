@@ -1,0 +1,23 @@
+
+     <div class="about-container">
+        
+            <div class="about-box">
+                <div id="img-descr">
+                    <img class="image"src="/{{selectedProject.nameDirectory}}/screenshot.jpg">
+                </div>
+                <div class="title">
+                    <h3>{{selectedProject.nameProject}}</h3>
+                </div>
+                <a class="button" href="/{{selectedProject.nameDirectory}}/index.html">Launch project</a>
+
+                <div class="description">
+                    <p>{{selectedProject.description}}</p>
+                </div>
+            </div>
+
+            <div id="side-nav">
+                {{> myProjects image=false }}
+            </div>
+    </div>
+
+        

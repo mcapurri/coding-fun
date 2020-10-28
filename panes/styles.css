@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    height: 400px;
+    width: 600px;
+    object-fit: contain;
+}
+.container {
+    position: relative;
+    border: 5px solid green;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+#top-image,
+#bottom-image {
+    position: absolute;
+    overflow: hidden;
+}
+/*#bottom-image {
+    position: absolute;
+} // no need to repeat it 
+in order to have the slidy reveal effect we need to.. */
+
+#top-image {
+    width: 300px;
+}
+
+#bar {
+    position: absolute;
+    height: 400px;
+    width: 10px;
+    background-color: green;
+    left: 300px;
+}

@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: greenyellow;
+}
+header {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: 80px;
+    position: relative;
+    max-width: 100vw;
+    justify-content: center;
+    background-color: darkgreen;
+    color: ivory;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Lobster", cursive;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+.img-box {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.name {
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
+    grid-column-start: 4;
+    color: darkgreen;
+}
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr 3fr;
+    /* width: 100vw; */
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.container {
+    width: 100vw;
+    height: 100%;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    height: 40px;
+    max-width: 100vw;
+    background-color: darkgreen;
+    color: ivory;
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-image: url("matrix.jpg");
+}
+
+#side-nav {
+    background-color: yellowgreen;
+    width: 20%;
+    height: 70%;
+    display: flex;
+    overflow: auto;
+    font-size: 10px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid darkgreen;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+#display {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img-descr {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+}
+.about-box {
+    width: 60%;
+    margin-left: 20px;
+}
+.about-container {
+    margin-top: 30px;
+    width: 100vw;
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+.description {
+    font-size: 25px;
+    margin-top: 50px;
+}
+.title {
+    font-size: 25px;
+}

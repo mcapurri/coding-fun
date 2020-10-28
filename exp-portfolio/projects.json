@@ -1,0 +1,37 @@
+[
+    {
+        "nameProject": "Ticker",
+        "nameDirectory": "./ticker",
+        "description": "Ticker displaying the latest news at the top of the web page"
+    },
+    {
+        "nameProject": "Kitty carousel",
+        "nameDirectory": "./kitty-carousel",
+        "description": "Sliding pictures collection of kitties"
+    },
+    {
+        "nameProject": "Stick man",
+        "nameDirectory": "./stick-man",
+        "description": "Stick man moves on the canvas with arrow keys"
+    },
+    {
+        "nameProject": "Connect four",
+        "nameDirectory": "./conn-four",
+        "description": "Popular game whose goal consist in aligning four slots in a row of the same color"
+    },
+    {
+        "nameProject": "Incremental search",
+        "nameDirectory": "./incremental",
+        "description": "The search output menu updates itself dinamically by typing into the search field"
+    },
+    {
+        "nameProject": "Spotify search",
+        "nameDirectory": "./spotify-search",
+        "description": "Search music by artist or album on Spotify"
+    },
+    {
+        "nameProject": "Panes",
+        "nameDirectory": "./panes",
+        "description": "Slidebar images positive/negative"
+    }
+]

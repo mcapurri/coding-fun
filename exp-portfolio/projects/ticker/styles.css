@@ -1,0 +1,27 @@
+* {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+#ticker {
+    height: 1.5em;
+    border: 5px dotted tomato;
+    position: relative;
+    overflow: hidden;
+}
+
+#headlines-container {
+    position: absolute;
+    left: 100%; /* this is because we want it to start at the complete right */
+    white-space: nowrap;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#headlines-container a {
+    padding-right: 30px; /*  padding should be used but it would prolongue the link on the right of the a element, the empty surface would remain clickable, so watch out! */
+}

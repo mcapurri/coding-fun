@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+}
+body {
+    background-image: url("./assets/usa-flag.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100hv;
+}
+body img {
+    opacity: 0.5;
+}
+
+h2 {
+    float: right;
+    margin-top: 20px;
+    padding-right: 50px;
+}
+.slot {
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+}
+.hole {
+    border: 40px solid blue;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transform: translate(-30px, -30px);
+}
+
+#board {
+    display: flex;
+}
+
+.trump {
+    background-image: url("./assets/trump-face.jpg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+}
+.biden {
+    background-image: url("./assets/biden-face.jpeg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center center;
+}
+
+.game-container {
+    position: relative;
+    top: 70px;
+    left: 50%;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.animation-on {
+    animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 25px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.on {
+    display: block;
+}
+.modal-content {
+    background-image: url(assets/Boxing-gloves.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 90%;
+    border-radius: 20px;
+    margin: 15% auto;
+    padding: 20px 20px 20px 50px;
+    width: 35%;
+    height: 15%;
+    border: 10px solid;
+    animation: changeCol 2s infinite;
+}
+@keyframes changeCol {
+    0% {
+        border-color: blue;
+        color: white;
+    }
+    33% {
+        border-color: white;
+        color: blue;
+    }
+    66% {
+        border-color: red;
+        color: white;
+    }
+    99% {
+        border-color: blue;
+        color: blue;
+    }
+}
+
+.reset-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: blue;
+    position: relative;
+    float: right;
+    top: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reset-btn:focus {
+    outline-style: none;
+}
+h3 {
+    position: relative;
+    float: left;
+    top: 40px;
+    color: white;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    animation: changeCol 5s infinite;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(19, 2, 8, 0.027);
+    z-index: -1;
+}
+.overlay-on {
+    visibility: visible;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+}

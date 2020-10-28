@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+#carousel {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* don't have to rewrite if you change the parent */
+    width: 100%;
+    object-fit: cover;
+    transform: translateX(100%);
+}
+
+#carousel img.onscreen {
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+#carousel img.offscreen-left {
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+#navbuttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.dotscreen {
+    background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    #carousel {
+        height: 768px;
+    }
+
+    .dot {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #carousel {
+        height: 1024px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #carousel {
+        height: 667px;
+    }
+}
+
+@media screen and (max-height: 375px) {
+    #carousel {
+        height: 375px;
+    }
+}
